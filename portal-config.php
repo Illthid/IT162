@@ -29,6 +29,7 @@ switch(THIS_PAGE){
         $title = "David's WEB120 Title Page";
         $logo = 'fa-home';
         $PageID = 'Welcome';
+        $logo_color ='style="color:rgb(166,77,255)"';
     break;
 
     case 'aia.php':
@@ -37,18 +38,27 @@ switch(THIS_PAGE){
       $logo_color ='style="color:#00f"';
     Break;
 
+    case 'flowchart.php':
+      $title = "Flowchart Page";
+      $logo = "fa-universal-access";
+      $PageID = 'Flowchart';
+      $logo_color ='style="color:rgb(166,77,255)"';
+
+      break;
 
     case 'contactme.php':
         $title = "David's WEB120 Contact Page";
         $logo = "fa-paper-plane-o";
-        $PageID = 'Contact Sara';
+        $PageID = 'Contact David';
         $logo_color ='style="color:#0f0"';
     break;
+
 
     default:
         $title = THIS_PAGE;
         $logo = '';//no icon by default
         $PageID = 'Welcome';
+        $logo_color ='style="color:rgb(166,77,255)"';
    }
 $nav1['index.php'] = "Welcome";
 $nav1['big/index.php'] = "Big";
@@ -56,6 +66,7 @@ $nav1['aia.php'] = "AIA";
 $nav1['flowchart.php'] = "Flowchart";
 $nav1['fp/index.php'] = "Final Project";
 $nav1['contactme.php'] = "Contact David";
+$nav1['https://github.com/Illthid/IT162'] = "David's github";
 
 
 /* Here we're creating a function to generate links and keep the hightlight
