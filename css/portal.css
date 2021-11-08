@@ -27,6 +27,31 @@ i.logo {
     font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
     margin-left:1%; /* this keeps the icon from being squeeezed to the left */
 }
+/* AIA grid table stuff -------------------------------- */
+
+.grid-item {
+    background-color: rgba(168, 205, 248, 0.8);
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.grid-list-item {
+    margin-left: 20px;
+}
+
+.table1, .table2 {
+    display: grid;
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+.table1 {
+    grid-template-columns: 30% 50%;
+}
+
+.table2 {
+    grid-template-columns: 30% 30% 30%;
+}
 
 
 /* Embed Responsively Rules! */
