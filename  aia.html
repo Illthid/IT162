@@ -1,4 +1,37 @@
-<?php include "includes/header.php";?>
+<?php include 'portal-config.php'?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><?=$title?></title>
+<meta name="viewport" content="width=device-width" />
+<meta name="robots" content="noindex,nofollow" />
+<meta charset="utf-8">
+<script src="https://use.fontawesome.com/84437f9951.js"></script>
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/portal.css" />
+<link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+<!-- START WRAPPER -->
+<main class="wrapper">
+<header>
+  <h1><a href="index.php"><i class="logo fa <?=$logo?>"<?=$logo_color?>></i> David Barnette's SCC IT162 Portal</a></h1>
+  <nav>
+    <ul class="topnav" id="myTopnav">
+    <?=makeLinks($nav1)?>
+      <!--
+      <li><a href="index.php" class="selected">Welcome</a></li>
+      <li><a href="big/index.php">Big</a></li>
+      <li><a href="aia.php">AIA</a></li>
+      <li><a href="flowchart.php">Flowchart/Layout</a></li>
+      <li><a href="fp/index.php">Final Project</a></li>
+      <li><a href="contactme.php">Contact David</a></li>
+      -->
+      <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
+    </ul>
+  </nav>
+</header>
 
 <h2>AIA By David</h2>
 
@@ -93,4 +126,36 @@
     </div>
 <!-- END of table 2 information  -->
 
-<?php include "includes/footer.php";?>
+<!-- START Footer -->
+  <footer>
+      <p><small>&#169; 2020-<?=date("Y")?> by
+      <!-- <p><small>$copy; 2020-Current by -->
+          <a href="contact.php">David Barnette</a>, All Rights Reserved ~
+          <a id="html-checker" href="#">Check HTML</a> ~
+          <a href="https://jigsaw.w3.org/css-validator/check?uri=referer">Check CSS</a></small>
+     </p>
+    </footer>
+<!-- END Footer -->
+</main>
+<!-- END WRAPPER -->
+
+
+
+
+<!-- JavaScript associated with the W3Schools.com Top Navigation Response Exercise -->
+  <script>
+	//https://tinyurl.com/dynamic-html-checker
+	document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+
+	//manages mobile nav
+	function myFunction() {
+    	var x = document.getElementById("myTopnav");
+    	if (x.className === "topnav") {
+        	x.className += " responsive";
+    	} else {
+        	x.className = "topnav";
+    	}
+	}
+ </script>
+</body>
+</html>
