@@ -46,8 +46,8 @@
  */
 
 //place your site keys here (keys for web-students.net posted here)
-$siteKey = "6Lfuv88cAAAAABpswunAu7HPGqqFwmo1j0Uu6kjx";
-$secretKey = "6Lfuv88cAAAAALAQQ9a36jNQzRPxOqYElYUKo5Df";
+$siteKey = "*";
+$secretKey = "*";
 date_default_timezone_set('America/Los_Angeles'); #sets default date/timezone for this website
 $server = 'dreamhost.com';
 //end config area ----------------------------------------
