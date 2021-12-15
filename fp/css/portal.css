@@ -1,5 +1,3 @@
-/* My it162 Portal Website Styles */
-
 html {
     background-color:#ccc;
 }
@@ -7,6 +5,29 @@ html {
 main.wrapper {
     background-color:#fff;
     overflow:auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  /* padding: 10px; */
+}
+#map-google {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 h1>a {
@@ -88,6 +109,9 @@ footer {
 		width:60%;
 		float:left;
 	}
+  .column{
+    width: 100%
+  }
 
 	aside {
 		width:39%;

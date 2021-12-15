@@ -1,0 +1,194 @@
+html {
+  background-color: green;
+  /* opacity: 0.6; */
+
+}
+main.wrapper {
+  background-color: rgb(255,255,204);
+  /* height: 1400px; */
+  overflow: auto;
+}
+section {
+  border-color: black;
+  border-style: solid;
+}
+*{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  height:650px;
+  padding: 10px;
+  border-color: black;
+  border-style: solid;
+  overflow: auto;
+}
+.column2{
+  float: left;
+  width: 100%;
+  height:1000px;
+  padding: 10px;
+  border-color: black;
+  border-style: solid;
+  overflow: auto;
+}
+#map-google {
+  height:500px;
+  width: 100%;
+}
+.container{
+  margin: 20px auto;
+  width:100%;
+  height:95%;
+  display:grid;
+  grid-template-columns: 45% 45%;
+  grid-row: 25% 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16{
+  background-color:#333;
+  padding:20px;
+  border-radius:10px;
+  color:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2em;
+  font-family:sans-serif;
+}
+.box-text{
+  padding:20px;
+  color:black;
+  font-size:2em;
+  font-family:sans-serif;
+}
+button,.box1,.box1.img{
+  background-image: url(../images/fruit.jpg);
+  background-size: cover;
+}
+button,.box2,.box2.img{
+  background-image: url(../images/vegetables.jpg);
+  background-size: cover;
+}
+button,.box3,.box3.img{
+  background-image: url(../images/peppers.jpg);
+  background-size: cover;
+  color: black;
+}
+button,.box4,.box4.img{
+  background-image: url(../images/contactus.jpg);
+  background-size: cover;
+}
+button,.box5,.box5.img{
+  background-image: url(../images/Peaches.jpg);
+  background-size: cover;
+}
+button,.box6,.box6.img{
+  background-image: url(../images/Lychee.jpg);
+  background-size: cover;
+}
+button,.box7,.box7.img{
+  background-image: url(../images/Apples.jpg);
+  background-size: cover;
+}
+button,.box8,.box8.img{
+  background-image: url(../images/oranges.jpg);
+  background-size: cover;
+}
+button,.box9,.box9.img{
+  background-image: url(../images/SaladGreens.jpg);
+  background-size: cover;
+}
+button,.box10,.box10.img{
+  background-image: url(../images/Potatoes.jpg);
+  background-size: cover;
+}
+button,.box11,.box11.img{
+  background-image: url(../images/Veg2.jpg);
+  background-size: cover;
+}
+button,.box12,.box12.img{
+  background-image: url(../images/Chanterelle.jpg);
+  background-size: cover;
+}
+button,.box13,.box13.img{
+  background-image: url(../images/Pep13.jpg);
+  background-size: cover;
+}
+button,.box14,.box14.img{
+  background-image: url(../images/Pep14.jpg);
+  background-size: cover;
+}
+button,.box15,.box15.img{
+  background-image: url(../images/Pep15.jpg);
+  background-size: cover;
+}
+button,.box16,.box16.img{
+  background-image: url(../images/Pep16.jpg);
+  background-size: cover;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media all and (min-width:1400px) {
+
+   main.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:100%;
+		float:left;
+	}
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+          background-color: #ccc;
+          color:#000;
+   }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+
+section {
+  width:100%;
+  float:left;
+}
+/* .column,.column2{
+  width: 100%;
+    float:left;
+} */
+.columnMain{
+  width: 95%;
+  overflow: hidden;
+
+}
+/* Change background color of navigation on selected page */
+ul.topnav li a.selected {
+    background-color: #ccc;
+    color:#000;
+}
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+  section {
+    width:100%;
+  }
+  .columnMain{
+    width: 100%;
+    overflow: hidden;
+
+  }
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+      background-color: #ccc;
+      color:#000;
+  }
+}
