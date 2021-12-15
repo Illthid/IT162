@@ -1,8 +1,8 @@
 <?php
 /**
- * simple.php is a postback application designed to provide a 
- * contact form for users to email our clients.  
- * 
+ * simple.php is a postback application designed to provide a
+ * contact form for users to email our clients.
+ *
  * simple.php provides a typical feedback form for a website
  *
  * @package nmCAPTCHA2
@@ -10,7 +10,7 @@
  * @version 2 2019/10/13
  * @link http://www.newmanix.com/
  * @license http://www.apache.org/licenses/LICENSE-2.0
- * @see contact_include.php  
+ * @see contact_include.php
  * @todo none
  */
 
@@ -23,18 +23,28 @@
 			Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
 		</label>
 	</div>
-	<div>	
+	<div>
 		<label>
 			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
 		</label>
 	</div>
-	<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
-	<div>	
+	<div>
 		<label>
-			Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Your comments are important to us!" tabindex="30"></textarea>
+			Phone:<br /><input type="phone" name="phone" required="required" placeholder="phone (required), Just in case we need to contact you" title="A valid phone is required" tabindex="30" size="44" />
 		</label>
-	</div>	
-    <div class="g-recaptcha" data-sitekey="<?=$siteKey;?>"></div> 
+	</div>
+	<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
+	<div>
+		<label>
+			What you like us to prepare for you?<br /><textarea name="What you like us to prepare for you?" cols="36" rows="4" placeholder="One item and quantity per line please" tabindex="30"></textarea>
+		</label>
+	</div>
+	<div>
+		<label>
+			Date/Time for Pickup?<br /><textarea name="When would you like it ready?" placeholder="Date/Time Here" tabindex="50" size="44"></textarea>
+		</label>
+	</div>
+  <div class="g-recaptcha" data-sitekey="<?=$siteKey;?>"></div>
 	<div>
 		<input type="submit" value="submit" />
 	</div>
